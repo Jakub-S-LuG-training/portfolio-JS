@@ -1,15 +1,19 @@
 ---
 import Hero from '../components/Hero.astro';
+import Progress from '../components/Progress.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<section id="hero">
 		<Hero />
-
 	</section>
-	<section id="skills"></section>
+	<section id="skills">
+		<Progress title="HTML" progress="20" />
+		<Progress title="CSS" />
+		<Progress />
+		<Progress />
+	</section>
 	<section id="timeline"></section>
 	<section id="projects"></section>
 </Layout>
-
