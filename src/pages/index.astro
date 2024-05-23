@@ -9,11 +9,23 @@ import Layout from '../layouts/Layout.astro';
 		<Hero />
 	</section>
 	<section id="skills">
-		<Progress title="HTML" progress="20" />
-		<Progress title="CSS" />
-		<Progress />
-		<Progress />
+		<div class="skills-list">
+			<Progress title="HTML" progress="20" color='red' />
+			<Progress title="CSS" progress="30" color='blue' />
+			<Progress title="JavaScript" progress='20' color='orange' />
+			<Progress title='Vibes' progress='90' color='fuchsia' />
+		</div>
 	</section>
 	<section id="timeline"></section>
 	<section id="projects"></section>
 </Layout>
+
+<style>
+	.skills-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+	}
+</style>
